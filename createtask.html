@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To-DO</title>
+    <link rel="stylesheet" href="createtask.css">
+</head>
+<body>
+
+    <div id="todo-container">
+        <h2><a href="./home.html">To-Do Planner</a></h2>
+        <input type="text" id="task-input" placeholder="Add a new task">
+        <button onclick="addTask()" id="add-task-btn">Add Task</button>
+
+        <ul id="task-list"></ul>
+
+        <div id="filter-buttons">
+            <button onclick="filterTasks('all')" class="active">All</button>
+            <button onclick="filterTasks('active')">Active</button>
+            <button onclick="filterTasks('completed')">Completed</button>
+        </div>
+
+        <button onclick="deleteCompleted()" id="delete-completed-btn">Delete Completed</button>
+    </div>
+    <script src="./createtask.js"></script>
+</body>
+</html>
